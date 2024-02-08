@@ -22,9 +22,9 @@ const next = () => {
 
 
 return (
-    <div style={{display: "flex", justifyContent: "center"}}>
-        <button onClick={previous}>Previous</button>
-        <button onClick={next}>next</button>
+    <div style={{display: 'flex', justifyContent: "space-around"}}>
+        <button style={{fontSize: 40,}} onClick={previous}>Previous</button>
+        <button style={{fontSize: 40,}} onClick={next}>next</button>
 
     </div>
     )
