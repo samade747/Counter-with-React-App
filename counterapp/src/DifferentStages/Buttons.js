@@ -27,6 +27,6 @@ return (
         <button onClick={next}>next</button>
 
     </div>
-)
+    )
 
 }
