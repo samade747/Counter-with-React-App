@@ -4,7 +4,7 @@ const stagesNumber = [1, 2, 3]
 
 return (
     <>
-     <div>
+     <div style={{display: "flex", justifyContent: "space-around"}}>
 
         {
            stagesNumber.map(singleNum => (                        
