@@ -8,7 +8,7 @@ export default function Data({ level }){
 
 
     return (
-        <div style={{ textAlign: 'center', color: "white"}}>
+        <div style={{ textAlign: 'center', color: "red", fontSize: "100px"}}>
             {differentTexts[level - 1]}
         </div>
 

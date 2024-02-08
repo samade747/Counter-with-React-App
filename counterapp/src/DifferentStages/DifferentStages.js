@@ -7,28 +7,28 @@ import Buttons from "./Buttons.js";
 export default function DifferentStages(){
 
     const [level, setLevel] = useState(1)
-    const [theme, setTheme] = useState(false)
+    const [garam, setGaram] = useState(false)
 
 
     function darkho(){
-        setTheme(true)
+        setGaram(true)
     }
 
     function lightho(){
-        setTheme(false)
+        setGaram(false)
     }
 
 
  
 
-return(
-    <div style={{height: '100vh', backgroundColor: theme ? "White" : "Black"}}>
-        <Buttons onClick={darkho}>Dark</Buttons>
-        <Buttons onClick={lightho}>Light</Buttons>
+return (
+    <div style={{height: '100vh', backgroundColor: garam ? "black" : "white"}}>
+        <button onClick={darkho}>Dark</button>
+        <button onClick={lightho}>Light</button>
 
             <div style={differentStagesCSS}>
-                <Stages level={level}/> 
-                <Data level={level}/>
+                <Stages level={level} /> 
+                <Data level={level} />
                 <Buttons setLevel={setLevel} level={level}/>
             </div>
     </div>
