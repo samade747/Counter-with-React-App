@@ -1,4 +1,4 @@
-export default function Stages(){
+export default function Stages({ level }){
 
 const stagesNumber = [1, 2, 3]
 
@@ -10,7 +10,7 @@ return (
            stagesNumber.map(singleNum => (                        
             <p style={
                 {
-                backgroundColor: "blue",
+                backgroundColor: level == singleNum ? "blue": "white",
                 borderRadius: "50%",
                 height: "50px",
                 width: "50px",

@@ -1,12 +1,23 @@
-export default function Buttons({ setLevel }){
+export default function Buttons({ setLevel, level }){
 
-console.log(setLevel => "smads")
+console.log(setLevel, "setLevel")
 const previous = () => {
-
+    if(level == 1){
+        setLevel(3)
+        console.log(setLevel, "setLevel")
+    } else {
+        setLevel(level - 1)
+        console.log(setLevel, "setLevel1")
+    }
 }
 
 const next = () => {
-    
+    if(level == 3){
+        setLevel(1)
+    } else{
+        setLevel((previous) => previous + 1)
+
+    }
 }
 
 
