@@ -17,8 +17,8 @@ return (
                 display: 'flex',
                 alignItems: "center",
                 justifyContent: "center",
-                color: "white",
-                border: "20px solid yellow"
+                color: level == singleNum ? "yellow" : "blue",
+                border: `20px solid ${level == singleNum ? "yellow" : "red"}`
             }
             }>{singleNum}</p>
             ))
