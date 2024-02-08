@@ -20,7 +20,7 @@ return (
                 color: "white",
                 border: "20px solid yellow"
             }
-            }></p>
+            }>{singleNum}</p>
             ))
         }
 
