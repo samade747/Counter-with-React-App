@@ -22,9 +22,11 @@ export default function DifferentStages(){
  
 
 return (
-    <div style={{height: '100vh', backgroundColor: garam ? "black" : "white"}}>
-        <button onClick={darkho}>Dark</button>
-        <button onClick={lightho}>Light</button>
+    <div style={{height: '100vh', backgroundColor: garam ? "white" : "black"}}>
+        <div style={{justifyItems: "center", margin: "auto" }   }>
+        <button onClick={darkho}>Light</button>
+        <button onClick={lightho}>Dark</button>
+        </div>
 
             <div style={differentStagesCSS}>
                 <Stages level={level} /> 

@@ -1,3 +1,5 @@
+export {Stages} from Stages.css
+
 export default function Stages({ level }){
 
 const stagesNumber = [1, 2, 3]
@@ -8,7 +10,7 @@ return (
 
         {
            stagesNumber.map(singleNum => (                        
-            <p style={
+            <p className="wirl-in-fwd" style={
                 {
                 backgroundColor: level == singleNum ? "blue": "white",
                 borderRadius: "50%",
@@ -19,6 +21,7 @@ return (
                 justifyContent: "center",
                 color: level == singleNum ? "yellow" : "blue",
                 border: `20px solid ${level == singleNum ? "yellow" : "red"}`
+                
             }
             }>{singleNum}</p>
             ))
